@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmacia Salud y Ahorro</title>
+   <script>
+  (function(){
+    function loadScript(src, onload, onerror){
+      var s=document.createElement('script'); s.src=src; s.async=true;
+      s.onload=onload; s.onerror=onerror||function(){}; document.head.appendChild(s);
+    }
+    function loadCSS(href){
+      var l=document.createElement('link'); l.rel='stylesheet'; l.href=href; document.head.appendChild(l);
+    }
+    loadScript('https://cdn.tailwindcss.com', function(){}, function(){
+      loadScript('https://unpkg.com/tailwindcss-cdn@3.4.1/tailwind.min.js', function(){}, function(){
+        loadCSS('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+      });
+    });
+  })();
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial }
+    .container { max-width: 1200px; }
+    .shadow-soft{box-shadow: 0 12px 30px rgba(2, 132, 199, .08)}
+    .btn{display:inline-grid; place-content:center; height:44px; padding:0 18px; border-radius:12px; font-weight:600}
+    .btn-primary{background:#16a34a; color:white} .btn-primary:hover{background:#15803d}
+    .btn-ghost{border:1px solid rgba(0,0,0,.1)}
+    .badge{background:#065f46;color:#ecfdf5;padding:.2rem .55rem;border-radius:999px;font-size:.75rem}
+    .link{color:#065f46} .link:hover{text-decoration:underline}
+  </style>
+</head>
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow">
+      <nav class="container mx-auto px-4 h-16 flex items-center gap-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="img/logo_empresa.png" alt="Logo Farmacia Salud y Ahorro" class="h-10 w-10 rounded-full bg-white p-1 shadow border border-emerald-300">
+          <span class="font-extrabold text-emerald-900 text-lg">Farmacia Salud y Ahorro</span>
+        </a>
+        <div class="ml-auto hidden md:flex items-center"><a href="index.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 font-bold text-emerald-900">Inicio</a>
+<a href="saif.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Proyecto SAIF</a>
+<a href="nosotros.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Acerca de</a>
+<a href="index.html#productos" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Productos</a>
+<a href="blog.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Blog</a>
+<a href="contacto.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Contacto</a>
+<a href="login.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Entrar</a></div>
+        <form action="index.html#productos" class="ml-4 flex items-center gap-2">
+          <input name="q" placeholder="Buscar..." class="h-10 px-3 rounded-lg border border-emerald-300 shadow focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-white" />
+          <button class="btn btn-primary shadow transition-transform hover:scale-105">Buscar</button>
+        </form>
+      </nav>
+    </header>
+
+<!-- CARRUSEL (Hero) -->
+  <section id="hero" class="relative w-full overflow-hidden bg-green-700/5">
+    <div id="slider" class="relative h-[52vh] md:h-[64vh]">
+      <!-- Slides -->
+      <div class="absolute inset-0 opacity-100 transition-opacity duration-700 ease-out" data-slide>
+        <img src="img/carusel 1.jpg" class="w-full h-full object-cover" alt="Promoción 1"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
+        <div class="absolute left-6 md:left-16 top-1/2 -translate-y-1/2 text-white max-w-xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Bienvenidos<br><span class="text-emerald-300">Tu salud es prioridad</span></h1>
+          <a href="#productos" class="btn btn-primary mt-5 inline-block">Comprar ahora</a>
+        </div>
+      </div>
+      <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-out" data-slide>
+        <img src="img/carusel 2.jpg" class="w-full h-full object-cover" alt="Promoción 2"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
+        <div class="absolute left-6 md:left-16 top-1/2 -translate-y-1/2 text-white max-w-xl">
+          <h2 class="text-4xl md:text-6xl font-extrabold">Vive Bien<br><span class="text-emerald-300">Asesoría profesional</span></h2>
+          <a href="#empresa" class="btn btn-primary mt-5 inline-block">Conócenos</a>
+        </div>
+      </div>
+      <div class="absolute inset-0 opacity-0 transition-opacity duration-700 ease-out" data-slide>
+        <img src="img/carusel 3.jpg" class="w-full h-full object-cover" alt="Promoción 3"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
+        <div class="absolute left-6 md:left-16 top-1/2 -translate-y-1/2 text-white max-w-xl">
+          <h2 class="text-4xl md:text-6xl font-extrabold">Ofertas<br><span class="text-emerald-300">Precios accesibles</span></h2>
+          <a href="#productos" class="btn btn-primary mt-5 inline-block">Ver destacados</a>
+        </div>
+      </div>
+    </div>
+    <!-- Controles -->
+    <button id="prev" class="absolute left-3 top-1/2 -translate-y-1/2 grid place-items-center w-10 h-10 rounded-full bg-white/80 hover:bg-white shadow"><span class="sr-only">Anterior</span>❮</button>
+    <button id="next" class="absolute right-3 top-1/2 -translate-y-1/2 grid place-items-center w-10 h-10 rounded-full bg-white/80 hover:bg-white shadow"><span class="sr-only">Siguiente</span>❯</button>
+    <!-- Indicadores -->
+    <div id="dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2"></div>
+  </section>
+
+<!-- DEFINICIÓN / LO QUE OFRECEMOS -->
+<section class="container mx-auto px-4 py-16" id="definicion">
+  <div class="grid md:grid-cols-2 gap-10 items-center bg-white rounded-2xl shadow-lg p-8">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-emerald-800">¿Qué es Farmacia Salud y Ahorro?</h2>
+      <p class="mt-4 text-slate-700 leading-relaxed">
+        Somos una farmacia cercana que ofrece productos farmacéuticos y de cuidado personal con <span class="font-semibold">calidad</span>,
+        <span class="font-semibold">buen precio</span> y <span class="font-semibold">asesoría profesional</span>.
+      </p>
+      <div class="mt-6 grid sm:grid-cols-3 gap-4">
+        <div class="p-4 rounded-xl border bg-white text-center shadow">
+          <div class="badge">Ofrecemos</div>
+          <p class="mt-2 text-sm">Medicamentos, vitaminas, dermatología, pediatría.</p>
+        </div>
+        <div class="p-4 rounded-xl border bg-white text-center shadow">
+          <div class="badge">Defendemos</div>
+          <p class="mt-2 text-sm">Cercanía, rapidez y precios accesibles.</p>
+        </div>
+        <div class="p-4 rounded-xl border bg-white text-center shadow">
+          <div class="badge">Servicios</div>
+          <p class="mt-2 text-sm">Entrega a domicilio y atención personalizada.</p>
+        </div>
+      </div>
+    </div>
+    <img class="rounded-2xl shadow-soft" alt="Farmacia" src="img/farmacia.png"/>
+  </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section class="bg-emerald-50/50 border-y my-16 py-12 rounded-2xl shadow-lg" id="productos">
+  <div class="container mx-auto px-4 py-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-emerald-800">Productos destacados</h2>
+      <div class="flex gap-2 w-full md:w-auto">
+        <input id="search" placeholder="Buscar productos..." class="h-11 px-4 rounded-xl border border-emerald-300 shadow w-full md:w-80 focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-white"/>
+        <select id="cat" class="h-11 px-4 rounded-xl border border-emerald-300 shadow bg-white">
+          <option value="">Todas</option><option>Higiene</option><option>Vitaminas</option><option>Dermatología</option>
+        </select>
+      </div>
+    </div>
+    <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+              <!-- Producto 1 -->
+              <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                <img src="img/producto1.jpg" alt="Vitamina C" class="h-24 w-24 object-contain mb-3">
+                <h3 class="font-bold text-emerald-700 mb-1">Vitamina C 500mg</h3>
+                <p class="text-sm text-slate-600 mb-2">Refuerza tu sistema inmune.</p>
+                <span class="font-semibold text-emerald-600 mb-2">Q35.00</span>
+                <button class="btn btn-primary w-full mt-auto">Agregar</button>
+              </div>
+              <!-- Producto 2 -->
+              <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                <img src="img/producto2.jpg" alt="Gel antibacterial" class="h-24 w-24 object-contain mb-3">
+                <h3 class="font-bold text-emerald-700 mb-1">Gel Antibacterial</h3>
+                <p class="text-sm text-slate-600 mb-2">Protección y limpieza instantánea.</p>
+                <span class="font-semibold text-emerald-600 mb-2">Q18.00</span>
+                <button class="btn btn-primary w-full mt-auto">Agregar</button>
+              </div>
+              <!-- Producto 3 -->
+              <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                <img src="img/producto3.jpg" alt="Crema hidratante" class="h-24 w-24 object-contain mb-3">
+                <h3 class="font-bold text-emerald-700 mb-1">Crema Hidratante</h3>
+                <p class="text-sm text-slate-600 mb-2">Cuida tu piel todos los días.</p>
+                <span class="font-semibold text-emerald-600 mb-2">Q42.00</span>
+                <button class="btn btn-primary w-full mt-auto">Agregar</button>
+              </div>
+              <!-- Producto 4 -->
+              <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center text-center">
+                <img src="img/producto4.jpg" alt="Jarabe infantil" class="h-24 w-24 object-contain mb-3">
+                <h3 class="font-bold text-emerald-700 mb-1">Jarabe Infantil</h3>
+                <p class="text-sm text-slate-600 mb-2">Alivio seguro para los pequeños.</p>
+                <span class="font-semibold text-emerald-600 mb-2">Q29.00</span>
+                <button class="btn btn-primary w-full mt-auto">Agregar</button>
+              </div>
+            </div>
+    
+
+  <footer class="bg-emerald-700 text-emerald-50 mt-16 rounded-t-2xl shadow-lg">
+    <div class="container mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <img src="img/logo_empresa.png" alt="Logo Farmacia" class="h-8 w-8 rounded-full bg-white p-1">
+          <span class="font-semibold">Farmacia Salud y Ahorro</span>
+        </div>
+        <p class="text-sm opacity-90">Tu salud es nuestra prioridad.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Enlaces</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a class="hover:underline" href="index.html">Inicio</a></li>
+          <li><a class="hover:underline" href="saif.html">Proyecto SAIF</a></li>
+          <li><a class="hover:underline" href="nosotros.html">Acerca de</a></li>
+          <li><a class="hover:underline" href="blog.html">Blog</a></li>
+          <li><a class="hover:underline" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Categorías</h4>
+        <ul class="space-y-1 text-sm">
+          <li>Higiene</li><li>Vitaminas</li><li>Dermatología</li><li>Pediatría</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Legal</h4>
+        <ul class="space-y-1 text-sm">
+          <li>Políticas de privacidad</li>
+          <li>Términos y condiciones</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/20">
+      <div class="container mx-auto px-4 py-4 text-xs opacity-90 flex items-center justify-between">
+        <span>© 2025 Farmacia Salud y Ahorro · Proyecto SAIF</span>
+        <span>Universidad Mariano Gálvez</span>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  // --- Carrusel automático (seguro con null checks) ---
+  (function(){
+    const slides = Array.from(document.querySelectorAll('[data-slide]'));
+    const nextBtn = document.getElementById('next');
+    const prevBtn = document.getElementById('prev');
+    const dotsWrap = document.getElementById('dots');
+    if (slides.length && nextBtn && prevBtn && dotsWrap){
+      let idx=0, timer=null;
+      slides.forEach((_,i)=>{
+        const b=document.createElement('button');
+        b.className='w-2.5 h-2.5 rounded-full bg-white/60 hover:bg-white transition';
+        b.addEventListener('click',()=>go(i,true));
+        dotsWrap.appendChild(b);
+      });
+      function paint(){
+        slides.forEach((s,i)=>{s.style.opacity=i===idx?1:0});
+        Array.from(dotsWrap.children).forEach((d,i)=>{d.style.background=i===idx?'#10B981':'rgba(255,255,255,.6)'});
+      }
+      function go(n,manual=false){
+        idx=(n+slides.length)%slides.length; paint();
+        if(manual){ restart(); }
+      }
+      function step(){ go(idx+1); }
+      function restart(){ clearInterval(timer); timer=setInterval(step,5000); }
+      nextBtn.addEventListener('click',()=>go(idx+1,true));
+      prevBtn.addEventListener('click',()=>go(idx-1,true));
+      restart(); paint();
+    }
+
+    // --- Buscador global que usa el de productos (si existen) ---
+    const globalSearch=document.getElementById('globalSearch');
+    const localSearch=document.getElementById('buscador');
+    const productosSection=document.getElementById('productos');
+    if(globalSearch && localSearch && productosSection){
+      globalSearch.addEventListener('keydown',e=>{
+        if(e.key==='Enter'){
+          e.preventDefault();
+          productosSection.scrollIntoView({behavior:'smooth'});
+          localSearch.value=globalSearch.value;
+          if (typeof filtra === 'function') filtra();
+        }
+      });
+    }
+
+    // --- Filtro de productos (texto + categoría) (si existe) ---
+    const grid=document.getElementById('gridProductos');
+    const filtro=document.getElementById('filtro');
+    let cards = grid ? Array.from(grid.children) : [];
+    window.filtra = function(){
+      if(!grid || !localSearch || !filtro) return;
+      const term=(localSearch.value||'').toLowerCase().trim();
+      const cat=filtro.value;
+      cards.forEach(c=>{
+        const n=(c.dataset.nombre||'').toLowerCase();
+        const okText=!term||n.includes(term);
+        const okCat=!cat||c.dataset.cat===cat;
+        c.style.display= okText && okCat ? '' : 'none';
+      });
+    }
+    if (localSearch) localSearch.addEventListener('input',filtra);
+    if (filtro) filtro.addEventListener('change',filtra);
+  })();
+</script>
+
+</body>
+</html>
