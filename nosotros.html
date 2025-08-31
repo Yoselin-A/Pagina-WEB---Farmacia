@@ -38,29 +38,32 @@
 </head>
 <body>
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b shadow">
-    <nav class="container mx-auto px-4 h-16 flex items-center gap-4">
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="img/logo_empresa.png" alt="Logo Farmacia Salud y Ahorro" class="h-10 w-10 rounded-full bg-white p-1 shadow">
-        <div class="leading-tight">
-          <div class="font-extrabold tracking-wide text-emerald-700">FARMACIA SALUD Y AHORRO</div>
-          <div class="text-xs text-emerald-800/70">Cerca de ti</div>
-        </div>
-      </a>
-      <div class="ml-auto hidden md:flex items-center">
-        <a href="index.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Inicio</a>
-        <a href="saif.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Proyecto SAIF</a>
-        <a href="nosotros.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 font-bold text-emerald-900">Acerca de</a>
-        <a href="index.html#productos" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Productos</a>
-        <a href="blog.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Blog</a>
-        <a href="contacto.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Contacto</a>
-        <a href="login.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Entrar</a>
+  <nav class="container mx-auto px-4 h-16 flex items-center gap-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="img/logo_empresa.png" alt="Logo Farmacia Salud y Ahorro" class="h-10 w-10 rounded-full bg-white p-1 shadow">
+      <div class="leading-tight">
+        <div class="font-extrabold tracking-wide text-emerald-700">FARMACIA SALUD Y AHORRO</div>
+        <div class="text-xs text-emerald-800/70">Cerca de ti</div>
       </div>
-      <form action="index.html#productos" class="ml-4 flex items-center gap-2">
-        <input name="q" placeholder="Buscar..." class="h-10 px-3 rounded-lg border border-emerald-300 shadow focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-white" />
-        <button class="btn btn-primary shadow transition-transform hover:scale-105">Buscar</button>
-      </form>
-    </nav>
-  </header>
+    </a>
+    <div class="ml-auto hidden md:flex items-center">
+      <a href="index.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Inicio</a>
+      <a href="saif.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Proyecto SAIF</a>
+      <a href="nosotros.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 font-bold text-emerald-900">Acerca de</a>
+      <a href="index.html#productos" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Productos</a>
+      <a href="blog.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Blog</a>
+      <a href="contacto.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700">Contacto</a>
+      <a href="login.html" class="px-3 py-2 rounded-lg hover:bg-emerald-50 hover:text-emerald-700 text-slate-700 flex items-center gap-2">
+        <img src="img/login_icon.png" alt="Login" class="h-6 w-6 rounded-full bg-white p-1">
+        <span>Login</span>
+      </a>
+    </div>
+    <form action="nosotros.html" class="ml-4 flex items-center gap-2">
+      <input name="q" placeholder="Buscar en el sitio..." class="h-10 px-3 rounded-lg border border-emerald-300 shadow focus:outline-none focus:ring-2 focus:ring-emerald-400 bg-white" />
+      <button class="btn btn-primary shadow transition-transform hover:scale-105">Buscar</button>
+    </form>
+  </nav>
+</header>
 
   <!-- CARRUSEL (Hero) -->
   <section id="hero" class="relative w-full overflow-hidden bg-green-700/5">
@@ -99,31 +102,96 @@
   </section>
 
   <section class="bg-emerald-700 text-white py-14">
-    <div class="container mx-auto px-4">
-      <h1 class="text-3xl md:text-5xl font-extrabold">Acerca de nosotros</h1>
-      <p class="mt-2 md:max-w-3xl">Conoce nuestra historia, misión y visión.</p>
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-2">Acerca de nosotros</h1>
+      <p class="mt-2 md:max-w-3xl mx-auto text-lg">Conoce nuestra historia, misión, visión, politica y metodos de pago</p>
     </div>
   </section>
 
   <section class="container mx-auto px-4 py-14">
-    <div class="p-8 rounded-2xl bg-emerald-50 border shadow-lg">
-      <h2 class="text-2xl font-extrabold text-emerald-800">Nuestra Historia</h2>
-      <p class="mt-4 text-slate-700 leading-relaxed">Todo comenzó en Villa Nueva, Guatemala, en julio de 2014, cuando los hermanos Héctor y Sergio García, dos emprendedores apasionados y con experiencia en el mundo farmacéutico, decidieron transformar su visión en realidad. Inspirados por el deseo de independencia y con el firme propósito de brindar salud accesible a las familias guatemaltecas, fundaron la primera sucursal de Farmacias Salud y Ahorro en el sector de El Búcaro. Aunque al principio soñaron con una abarrotería, su conocimiento del sector y el compromiso con el bienestar de la comunidad los llevó por un camino diferente: crear una farmacia enfocada en ofrecer productos confiables, atención cálida y precios realmente justos. Hoy, más de nueve años después, lo que comenzó como un pequeño local se ha convertido en una red de sucursales en constante crecimiento. Farmacias Salud y Ahorro no solo es una empresa familiar, es un símbolo de esfuerzo, cercanía y compromiso con la salud de todos.</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-10 mt-12 items-center">
-      <div class="order-2 md:order-1">
-        <h3 class="text-xl font-bold text-emerald-800">Misión</h3>
-        <p class="mt-3 text-slate-700">En Farmacias Salud y Ahorro, nos dedicamos a proporcionar productos farmacéuticos y servicios de salud de alta calidad para satisfacer las necesidades de nuestros clientes y a su vez mejorar su calidad de vida, contribuyendo al progreso de la sociedad y el bienestar en todas las comunidades que servimos.</p>
-      </div>
-      <img class="order-1 md:order-2 rounded-xl shadow-soft" src="img/mision.jpg" alt="Misión">
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-10 mt-12 items-center">
-      <img class="rounded-xl shadow-soft" src="img/vision.png" alt="Visión">
+    <!-- Historia en bloque verde sin imagen -->
+    <div class="bg-emerald-100 border-l-8 border-emerald-600 rounded-2xl shadow-soft p-8 mb-12">
       <div>
-        <h3 class="text-xl font-bold text-emerald-800">Visión</h3>
-        <p class="mt-3 text-slate-700">Consolidar nuestro posicionamiento sólido en el mercado farmacéutico de Guatemala a través de una fuerte conexión con nuestros clientes, buscando la mejora continua para destacarnos como referentes de excelencia en la atención y el servicio al cliente, gracias al compromiso de todos los empleados.</p>
+        <span class="block text-emerald-700 font-bold text-lg tracking-wide mb-1">NUESTRA</span>
+        <h2 class="text-3xl font-extrabold text-emerald-800 mb-4">Historia</h2>
+        <p class="text-slate-700 text-base leading-relaxed">
+          Todo comenzó en Villa Nueva, Guatemala, en julio de 2014, cuando los hermanos Héctor y Sergio García, dos emprendedores apasionados y con experiencia en el mundo farmacéutico, decidieron transformar su visión en realidad. Inspirados por el deseo de independencia y con el firme propósito de brindar salud accesible a las familias guatemaltecas, fundaron la primera sucursal de Farmacias Salud y Ahorro en el sector de El Búcaro.
+          <br><br>
+          Aunque al principio soñaron con una abarrotería, su conocimiento del sector y el compromiso con el bienestar de la comunidad los llevó por un camino diferente: crear una farmacia enfocada en ofrecer productos confiables, atención cálida y precios realmente justos.
+          <br><br>
+          Hoy, más de nueve años después, lo que comenzó como un pequeño local se ha convertido en una red de sucursales en constante crecimiento. Farmacias Salud y Ahorro no solo es una empresa familiar, es un símbolo de esfuerzo, cercanía y compromiso con la salud de todos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Misión y Visión con imagen -->
+    <div class="mb-16">
+      <h2 class="text-2xl font-extrabold text-emerald-700 mb-6 text-center">Misión y Visión</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white rounded-2xl shadow-soft border p-8 flex flex-col items-center hover:shadow-lg transition hover:scale-105">
+          <img src="img/mision.jpg" alt="Misión" class="h-20 w-20 mb-4 rounded-full object-cover shadow">
+          <h3 class="text-xl font-extrabold text-emerald-800 mb-2">Misión</h3>
+          <p class="text-slate-700 text-center text-base leading-relaxed">
+            Proporcionar productos farmacéuticos y servicios de salud de alta calidad para mejorar la vida de nuestros clientes y contribuir al bienestar de las comunidades que servimos.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-soft border p-8 flex flex-col items-center hover:shadow-lg transition hover:scale-105">
+          <img src="img/vision.png" alt="Visión" class="h-20 w-20 mb-4 rounded-full object-cover shadow">
+          <h3 class="text-xl font-extrabold text-emerald-800 mb-2">Visión</h3>
+          <p class="text-slate-700 text-center text-base leading-relaxed">
+            Consolidar nuestro liderazgo en el mercado farmacéutico de Guatemala, destacando por excelencia en atención y servicio, y por la mejora continua impulsada por nuestro equipo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- División clara de Políticas y Legal -->
+    <div class="mb-16">
+      <h2 class="text-2xl font-extrabold text-emerald-700 mb-6 text-center">Políticas y Atención al Cliente</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-emerald-50 rounded-2xl border shadow-soft p-8 flex flex-col justify-center hover:shadow-lg transition hover:scale-105">
+          <h3 class="text-lg font-bold text-emerald-800 mb-3 flex items-center gap-2">
+            Atención al Cliente
+          </h3>
+          <p class="text-slate-700 mb-2">Valoramos cada interacción. Nuestro equipo atiende dudas, sugerencias y reclamos de forma respetuosa y eficiente.</p>
+          <ul class="text-sm text-emerald-700 space-y-1 mt-2">
+            <li>Teléfono y WhatsApp: <span class="font-semibold">+502 4321 1234</span></li>
+            <li>Redes sociales y web</li>
+          </ul>
+        </div>
+        <div class="bg-emerald-50 rounded-2xl border shadow-soft p-8 flex flex-col justify-center hover:shadow-lg transition hover:scale-105">
+          <h3 class="text-lg font-bold text-emerald-800 mb-3 flex items-center gap-2">
+            Privacidad y Seguridad
+          </h3>
+          <p class="text-slate-700 mb-2">Protegemos tu información personal. Los datos se usan solo para gestionar pedidos y nunca se comparten sin tu consentimiento.</p>
+          <ul class="text-sm text-emerald-700 space-y-1 mt-2">
+            <li>Protocolos avanzados de seguridad</li>
+            <li>Encriptación de datos y pagos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Métodos de pago en bloque -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-extrabold text-emerald-700 mb-6 text-center">Métodos de Pago</h2>
+      <div class="flex flex-col items-center">
+        <div class="bg-white rounded-2xl border shadow-soft p-8 w-full max-w-xl hover:shadow-lg transition hover:scale-105">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-2">
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl shadow-soft p-5 flex flex-col items-center">
+              <svg class="w-8 h-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M2 11h20"></path></svg>
+              <span class="font-semibold text-emerald-800">Tarjetas de crédito/débito</span>
+            </div>
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl shadow-soft p-5 flex flex-col items-center">
+              <svg class="w-8 h-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 10h18v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4z"/><path d="M7 16v2a2 2 0 002 2h6a2 2 0 002-2v-2"></path></svg>
+              <span class="font-semibold text-emerald-800">Pagos contra entrega</span>
+            </div>
+            <div class="bg-emerald-50 border border-emerald-200 rounded-xl shadow-soft p-5 flex flex-col items-center">
+              <svg class="w-8 h-8 text-emerald-600 mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12h4v4"/><path d="M12 8v4"/></svg>
+              <span class="font-semibold text-emerald-800">Qpaypro</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -145,19 +213,26 @@
           <li><a class="hover:underline" href="nosotros.html">Acerca de</a></li>
           <li><a class="hover:underline" href="blog.html">Blog</a></li>
           <li><a class="hover:underline" href="contacto.html">Contacto</a></li>
+          <li><a class="hover:underline" href="index.html#productos">Productos</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold mb-2">Categorías</h4>
+        <h4 class="font-semibold mb-2">Categorías de Productos</h4>
         <ul class="space-y-1 text-sm">
-          <li>Higiene</li><li>Vitaminas</li><li>Dermatología</li><li>Pediatría</li>
+          <li><a class="hover:underline" href="index.html#productos" onclick="document.getElementById('menuCategoria')?.value='marca';document.getElementById('menuCategoria')?.dispatchEvent(new Event('change'));">Medicamento de marca</a></li>
+          <li><a class="hover:underline" href="index.html#productos" onclick="document.getElementById('menuCategoria')?.value='generico';document.getElementById('menuCategoria')?.dispatchEvent(new Event('change'));">Medicamento genérico</a></li>
+          <li><a class="hover:underline" href="index.html#productos" onclick="document.getElementById('menuCategoria')?.value='topico';document.getElementById('menuCategoria')?.dispatchEvent(new Event('change'));">Producto tópico</a></li>
+          <li><a class="hover:underline" href="index.html#productos" onclick="document.getElementById('menuCategoria')?.value='inyectado';document.getElementById('menuCategoria')?.dispatchEvent(new Event('change'));">Producto inyectado</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold mb-2">Legal</h4>
+        <h4 class="font-semibold mb-2">Legal y Políticas</h4>
         <ul class="space-y-1 text-sm">
-          <li>Políticas de privacidad</li>
-          <li>Términos y condiciones</li>
+          <li><a class="hover:underline" href="nosotros.html#politicas">Políticas de la empresa</a></li>
+          <li class="mt-2 font-bold text-emerald-200">Atención al Cliente</li>
+          <li>Teléfono y WhatsApp: +502 4321 1234</li>
+          <li>Privacidad y seguridad de datos</li>
+          <li>Métodos de pago: Tarjetas, Qpaypro, Contra entrega</li>
         </ul>
       </div>
     </div>
@@ -168,7 +243,6 @@
       </div>
     </div>
   </footer>
-
   <script>
     // --- Carrusel automático (seguro con null checks) ---
     (function(){
