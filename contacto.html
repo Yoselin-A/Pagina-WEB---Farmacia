@@ -104,17 +104,23 @@
     </div>
   </section>
 
-  <section class="container mx-auto px-4 py-14 grid md:grid-cols-2 gap-10">
-    <form class="p-6 rounded-xl border bg-white grid gap-4">
-      <input class="h-11 px-3 rounded-lg border" placeholder="Nombre" required>
-      <input type="email" class="h-11 px-3 rounded-lg border" placeholder="Correo" required>
-      <textarea rows="5" class="px-3 py-2 rounded-lg border" placeholder="Mensaje" required></textarea>
-      <button class="btn btn-primary shadow transition-transform hover:scale-105">Enviar</button>
-    </form>
+ <section class="container mx-auto px-4 py-14 grid md:grid-cols-2 gap-10">
+        <form id="contact-form" class="p-6 rounded-xl border bg-white grid gap-4 border-emerald-600">
+          <div class="flex gap-4">
+            <input class="h-11 px-3 rounded-lg border w-1/2 border-emerald-300" placeholder="Nombre" required>
+            <input class="h-11 px-3 rounded-lg border w-1/2 border-emerald-300" placeholder="Apellido" required>
+          </div>
+          <input type="email" class="h-11 px-3 rounded-lg border border-emerald-300" placeholder="Correo" required>
+          <textarea rows="5" class="px-3 py-2 rounded-lg border border-emerald-300" placeholder="Mensaje" required></textarea>
+          <button id="submit-btn" class="btn btn-primary shadow transition-transform hover:scale-105">Enviar</button>
+          <div id="success-message" class="text-center text-emerald-700 font-semibold opacity-0 transition-opacity">
+            ¡Formulario enviado correctamente!
+          </div>
+        </form>
     <div class="p-6 rounded-xl border bg-emerald-50">
       <h3 class="font-semibold">Información</h3>
       <ul class="mt-3 text-slate-700 text-sm space-y-1">
-        <li><strong>PBX:</strong> 2339-9860</li>
+        <li><st rong>PBX:</strong> 2339-9860</li>
         <li><strong>Domicilios:</strong> 5248-887</li>
         <li><strong>Correo:</strong> reclutamientoFSYA@gmail.com</li>
       </ul>
@@ -124,6 +130,51 @@
       </div>
     </div>
   </section>
+<div class="mb-8">
+  <h2 class="text-2xl font-extrabold text-emerald-700 mb-6 text-center">Visita nuestras redes sociales</h2>
+  <div class="flex flex-col items-center">
+    <div class="bg-white rounded-2xl border shadow-soft p-8 w-full max-w-xl hover:shadow-lg transition hover:scale-105">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-2">
+        <a href="https://www.facebook.com/FarmaciasSaludyAhorro" target="_blank" class="bg-emerald-50 border border-emerald-200 rounded-xl shadow-soft p-5 flex flex-col items-center hover:bg-emerald-100 transition">
+          <img src="img/facebook.png" alt="Logo de Facebook" class="w-16 h-16 rounded-full mb-2">
+          <span class="font-semibold text-emerald-800">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/farmaciassaludyahorro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" class="bg-emerald-50 border border-emerald-200 rounded-xl shadow-soft p-5 flex flex-col items-center hover:bg-emerald-100 transition">
+          <img src="img/instagram.png" alt="Logo de Instagram" class="w-16 h-16 rounded-full mb-2">
+          <span class="font-semibold text-emerald-800">Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@fsya_guat?is_from_webapp=1&sender_device=pc" target="_blank" class="bg-emerald-50 border border-emerald-200 rounded-xl shadow-soft p-5 flex flex-col items-center hover:bg-emerald-100 transition">
+          <img src="img/tiktok.png" alt="Logo de TikTok" class="w-16 h-16 rounded-full mb-2">
+          <span class="font-semibold text-emerald-800">TikTok</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+ <!--Envio Formulario-->
+<script>
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('success-message');
+  const submitBtn = document.getElementById('submit-btn');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
+
+    setTimeout(() => {
+      successMessage.style.opacity = '1';
+      
+      form.reset();
+      submitBtn.textContent = 'Enviar';
+      submitBtn.disabled = false;
+      
+      setTimeout(() => {
+        successMessage.style.opacity = '0';
+      }, 5000);
+    }, 1500); // Espera 1.5 segundos
+  });
+</script>
 
   <footer class="bg-emerald-700 text-emerald-50 mt-16 rounded-t-2xl shadow-lg">
     <div class="container mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
